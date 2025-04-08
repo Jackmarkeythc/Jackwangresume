@@ -32,7 +32,7 @@ const translations = {
         skills4: "Additional Skills: Digital Marketing Strategies, Brand & Product Development, User Interface, Cross-Cultural Communication",
         additionalInfo: "Additional Information",
         additionalInfo1: "Languages: English (Fluent), Mandarin (Native)",
-        additionalInfo2: "Interests: Interaction Design, Marketing Innovations, Culinary Arts",
+        additionalInfo2: "Interests: Interaction Design, Guitar, Photography, Film, Marketing Innovations, Culinary Arts",
     },
     zh: {
         welcome: "欢迎来到王海铭的作品集",
@@ -67,7 +67,7 @@ const translations = {
         skills4: "其他技能：数字营销策略、品牌与产品开发、用户界面、跨文化沟通",
         additionalInfo: "附加信息",
         additionalInfo1: "语言：英语（流利），普通话（母语）",
-        additionalInfo2: "兴趣：交互设计、营销创新、烹饪艺术",
+        additionalInfo2: "兴趣：交互设计、吉他、摄影、电影、营销创新、烹饪艺术",
     },
     fr: {
         welcome: "Bienvenue dans le portfolio de Haiming Wang",
@@ -102,7 +102,7 @@ const translations = {
         skills4: "Compétences supplémentaires : Stratégies de marketing numérique, Développement de marque et de produit, Interface utilisateur, Communication interculturelle",
         additionalInfo: "Informations supplémentaires",
         additionalInfo1: "Langues : Anglais (courant), Mandarin (natif)",
-        additionalInfo2: "Intérêts : Design d'interaction, Innovations marketing, Arts culinaires",
+        additionalInfo2: "Intérêts : Design d'interaction, Guitare, Photographie, Cinéma, Innovations marketing, Arts culinaires",
     },
 };
 
