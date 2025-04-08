@@ -40,6 +40,7 @@ header nav ul li a.active {
 section {
     padding: 3rem 2rem;
     text-align: center;
+    text-align: justify; /* Justify text for better readability */
 }
 
 #home {
@@ -67,6 +68,7 @@ form {
     max-width: 500px;
     margin: 0 auto;
     text-align: left;
+    text-align: left; /* Keep forms left-aligned */
 }
 
 form label {
@@ -98,6 +100,7 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
     margin-top: auto;
+    text-align: center; /* Keep footer text centered */
 }
 
 .container {
@@ -105,4 +108,10 @@ footer {
     margin: 0 auto;
     padding: 30px;
     flex: 1;
+}
+
+#languageSelector {
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 1rem;
 }
