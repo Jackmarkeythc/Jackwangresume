@@ -1,7 +1,7 @@
 const translations = {
     en: {
         welcome: "Welcome to Haiming Wang's Portfolio",
-        description: "Aspiring UI/UX Designer with a background in Interaction Design, Marketing, and Hospitality...",
+        description: "Aspiring UI/UX Designer with a background in Interaction Design, Marketing, and Hospitality. Passionate about creating user-centric digital experiences that enhance engagement and accessibility. Skilled in wireframing, prototyping, and user research, with hands-on experience in cross-cultural teamwork and digital marketing strategies.",
         learnMore: "Learn More",
         contact: "Contact",
         phone: "Phone: 647-939-2230",
@@ -36,11 +36,11 @@ const translations = {
     },
     zh: {
         welcome: "欢迎来到王海铭的作品集",
-        description: "具有交互设计、市场营销和酒店管理背景的UI/UX设计师...",
+        description: "具有交互设计、市场营销和酒店管理背景的UI/UX设计师。热衷于创建以用户为中心的数字体验，以增强参与度和可访问性。擅长线框图、原型设计和用户研究，拥有跨文化团队合作和数字营销策略的实践经验。",
         learnMore: "了解更多",
         contact: "联系",
         phone: "电话: 647-939-2230",
-        footer: "&copy; 2025 王海铭. 版权所有。",
+        footer: "&copy; 2025 王海铭。版权所有。",
         about: "关于我",
         aboutDescription: "你好，我是王海铭 (Jack)。我是一名来自中国的国际学生，目前居住在多伦多。我在市场营销和酒店管理方面有专业经验，目前正在乔治布朗学院攻读交互设计学位。",
         profile: "简介",
@@ -71,7 +71,7 @@ const translations = {
     },
     fr: {
         welcome: "Bienvenue dans le portfolio de Haiming Wang",
-        description: "Designer UI/UX en devenir avec une expérience en design d'interaction, marketing et hôtellerie...",
+        description: "Designer UI/UX en herbe avec une expérience en conception d'interaction, marketing et hôtellerie. Passionné par la création d'expériences numériques centrées sur l'utilisateur qui améliorent l'engagement et l'accessibilité. Compétent en wireframing, prototypage et recherche utilisateur, avec une expérience pratique du travail d'équipe interculturel et des stratégies de marketing numérique.",
         learnMore: "En savoir plus",
         contact: "Contact",
         phone: "Téléphone : 647-939-2230",
@@ -106,10 +106,25 @@ const translations = {
     },
 };
 
-document.getElementById("languageSelector").addEventListener("change", (event) => {
-    const selectedLanguage = event.target.value;
-    document.querySelectorAll("[data-translate]").forEach((element) => {
-        const key = element.getAttribute("data-translate");
-        element.innerHTML = translations[selectedLanguage][key];
+// Function to update translations
+function updateTranslations(language) {
+    const elements = document.querySelectorAll('[data-translate]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[language] && translations[language][key]) {
+            element.innerHTML = translations[language][key];
+        }
     });
+}
+
+// Event listener for language selector
+document.getElementById('languageSelector').addEventListener('change', (event) => {
+    const selectedLanguage = event.target.value;
+    updateTranslations(selectedLanguage);
+});
+
+// Set default language on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const defaultLanguage = 'en'; // Change this if you want a different default language
+    updateTranslations(defaultLanguage);
 });
